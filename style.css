@@ -1,5 +1,19 @@
 body {
     background-color: antiquewhite;
+    display: flex;
+}
+
+.left {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    margin-top: 100px;
+    height: fit-content;
+    background-color: rgba(95, 158, 160, 0.5);
+    color: brown;
 }
 
 .container {
