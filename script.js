@@ -1,12 +1,19 @@
-let password = document.querySelector("#password");
-let passwordConfirm = document.querySelector("#password-confirm");
+let pwd = document.querySelector("#password");
+let pwdConfirm = document.querySelector("#password-confirm");
 let container = document.querySelector(".pwd-confirm");
 let warning = document.querySelector(".warning");
+let submitBtn = document.querySelector(".submitBtn");
 
-function validatePassword(password, passwordConfirm) {
-    warning.textContent = (password.value === passwordConfirm.value) ? "" : "Passwords do not match";
+function passwordsMatch(password, passwordConfirm) {
+    return password.value === passwordConfirm.value;
 }
 
-passwordConfirm.addEventListener("input", () => {
-    validatePassword(password, passwordConfirm);
+pwdConfirm.addEventListener("input", () => {
+    warning.textContent = (passwordsMatch(pwd, pwdConfirm)) ? "" : "Passwords do not match";
+});
+
+submitBtn.addEventListener("click",(event) => {
+    if (!passwordsMatch(pwd, pwdConfirm)) {
+        event.preventDefault();   
+    }
 });
