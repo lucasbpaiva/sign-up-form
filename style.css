@@ -19,9 +19,14 @@ body {
 .container {
     display: flex;
     flex-direction: column;
+    height: 250px;
     padding: 20px;
     gap: 20px;
     background-color: aliceblue;
+}
+
+h3 {
+    margin-top: 0;
 }
 
 .first-line,
@@ -46,4 +51,10 @@ button {
 
 a {
     text-decoration: none;
+}
+
+.warning {
+    margin: 2px;
+    color: red;
+    font-size: 0.9em;
 }
