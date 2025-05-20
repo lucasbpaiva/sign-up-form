@@ -15,5 +15,6 @@ pwdConfirm.addEventListener("input", () => {
 submitBtn.addEventListener("click",(event) => {
     if (!passwordsMatch(pwd, pwdConfirm)) {
         event.preventDefault();
+        warning.textContent = "Passwords do not match";
     }
 });
