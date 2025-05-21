@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "playfair-display";
+    src:
+    url("fonts/playfairdisplay-variablefont_wght-webfont.woff2") format("woff2"),
+    url("fonts/playfairdisplay-variablefont_wght-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-color: antiquewhite;
     display: flex;
@@ -26,7 +35,7 @@ body {
     text-align: center;
 }
 
-img {
+.background {
     max-height: 600px;
     border-radius: 10px 0px 0px 10px;
 }
@@ -42,6 +51,30 @@ img {
     margin: 0 auto;
 }
 
+.logo-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    left: 0;
+    right: 0;
+    top: 25%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: brown;
+}
+
+.logo {
+    max-height: 50px;
+}
+
+.title {
+    font-size: 3em;
+    margin: 0;
+    font-family: "playfair-display";
+}
+
 .right {
     flex: auto;
     background-color: azure;
@@ -54,15 +87,6 @@ img {
  .right > :not(form) {
     padding: 0px 20px;
  }
-
-.logo {
-    margin-top: 100px;
-    height: fit-content;
-    width: 100%;
-    text-align: center;
-    background-color: rgba(95, 158, 160, 0.5);
-    color: brown;
-}
 
 .container {
     display: flex;
