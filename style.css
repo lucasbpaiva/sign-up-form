@@ -21,9 +21,25 @@ body {
     border-radius: 10px;
 }
 
+.left{
+    position: relative;
+    text-align: center;
+}
+
 img {
     max-height: 600px;
     border-radius: 10px 0px 0px 10px;
+}
+
+.photo-credits {
+    color: white;
+    position: absolute;
+    bottom: 10px;
+
+    /* center element horizontally, with p element the container must have "text-align: center;" as well */
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 .right {
@@ -84,8 +100,17 @@ button {
     background-color: lightseagreen;
 }
 
-a {
+button:hover {
+    cursor: pointer;
+}
+
+a:not(.credits-link) {
     text-decoration: none;
+}
+
+.credits-link:link,
+.credits-link:visited {
+    color: white;
 }
 
 .warning {
