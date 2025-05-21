@@ -5,13 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In Form</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.jpeg" type="icon">
 </head>
 <body>
     <div class="super-container">
         <div class="modal">
             <div class="left">
-                <!-- <h1 class="logo">ODIN</h1> -->
-                <img src="background.jpg" alt="mountains">
+                <div class="logo-container">
+                    <img class="logo" src="images/odin-lined.png" alt="norseman with helmet smiling">
+                    <p class="title">ODIN</p>
+                </div>
+                <img class="background" src="images/background.jpg" alt="mountains">
+                <p class="photo-credits">
+                    Photo by 
+                    <a href="https://unsplash.com/@j_mk18?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" class="credits-link">
+                        Jon
+                    </a>
+                     on 
+                    <a href="https://unsplash.com/photos/landscape-photography-of-mountains-r8AFUpRp0J0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" class="credits-link">
+                        Unsplash
+                    </a>
+                </p>
             </div>
             <div class="right">
                 <div class="initial-message">
@@ -20,7 +34,7 @@
                 </div>
                 <form action="" method="get" id="registration">
                     <div class="container">
-                        <h3>Sign in to Balder</h3>
+                        <h3>Sign in to Odin</h3>
 
                         <div class="second-line">
                             <div class="input-group">
@@ -38,7 +52,7 @@
                 </form>
                 <div>
                     <button type="submit" class="submitBtn" form="registration">Log In</button>
-                    <p>Don't have an account? <a href="index.html">Sign up</a></p>
+                    <p>Don't have an account? <a class="login-link" href="index.html">Sign up</a></p>
                 </div>
             </div>
         </div>

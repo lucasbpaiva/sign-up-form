@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: antiquewhite;
+    background: linear-gradient(to bottom right, #2e22ac, #e74c9c);;
     display: flex;
     margin: 0;
 }
@@ -19,8 +19,8 @@ body {
     display: flex;
     align-items: center;
 
-    margin: auto;
-    width: 60%;
+    margin: 0 auto;
+    width: 50%;
 }
 
 .modal{
@@ -28,6 +28,12 @@ body {
     height: 600px;
     box-shadow: 2px 4px 16px black;
     border-radius: 10px;
+    color: brown;
+    font-family: sans-serif;
+}
+
+label {
+    font-size: 0.8em;
 }
 
 .left{
@@ -61,8 +67,7 @@ body {
     right: 0;
     top: 25%;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.2);
-    color: brown;
+    background-color: rgba(128, 0, 128, 0.1);
 }
 
 .logo {
@@ -73,11 +78,12 @@ body {
     font-size: 3em;
     margin: 0;
     font-family: "playfair-display";
+    color: brown;
 }
 
 .right {
     flex: auto;
-    background-color: azure;
+    background-color: #f4eeff;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -94,7 +100,8 @@ body {
     height: 250px;
     padding: 20px;
     gap: 20px;
-    background-color: aliceblue;
+    background-color: #dcd6f780;
+    box-shadow: 0px 2px 8px gray;
 }
 
 h3 {
@@ -117,11 +124,16 @@ input {
     width: 160px;
 }
 
+input:user-invalid {
+    border: 2px solid red;
+    border-radius: 2px;
+}
+
 button {
     padding: 5px 20px;
     border-radius: 5px;
     color: whitesmoke;
-    background-color: lightseagreen;
+    background-color: rebeccapurple;
 }
 
 button:hover {
@@ -130,6 +142,11 @@ button:hover {
 
 a:not(.credits-link) {
     text-decoration: none;
+}
+
+.login-link:link,
+.login-link:visited {
+    color: brown;
 }
 
 .credits-link:link,
